@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CD7A1E64E0C37AA3BA9BDEA /* Pods_PJImageDownLoadToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095C570BC9A50214358FED8F /* Pods_PJImageDownLoadToolTests.framework */; };
+		9764DB31F5DD69DA4E194B83 /* Pods_PJImageDownLoadTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB7DD4DF01E1135A125D22F /* Pods_PJImageDownLoadTool.framework */; };
+		CA0242922258759B00578165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0242912258759B00578165 /* AppDelegate.swift */; };
+		CA0242942258759B00578165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0242932258759B00578165 /* ViewController.swift */; };
+		CA0242962258759C00578165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0242952258759C00578165 /* Assets.xcassets */; };
+		CA0242992258759C00578165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0242972258759C00578165 /* Main.storyboard */; };
+		CA0242A52258759C00578165 /* PJImageDownLoadToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0242A42258759C00578165 /* PJImageDownLoadToolTests.swift */; };
+		CA0242B02258759C00578165 /* PJImageDownLoadToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0242AF2258759C00578165 /* PJImageDownLoadToolUITests.swift */; };
+		CA0242BF22587A6C00578165 /* PJImageTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0242BE22587A6C00578165 /* PJImageTask.swift */; };
+		CA0242C122587E1500578165 /* PJImageTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0242C022587E1500578165 /* PJImageTaskView.swift */; };
+		CA0242C32258DA0100578165 /* PJImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0242C22258DA0100578165 /* PJImageCache.swift */; };
+		EF4B08DF9393EEFC0FB9801E /* Pods_PJImageDownLoadToolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29507455A1D70AE12392660C /* Pods_PJImageDownLoadToolUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA0242A12258759C00578165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA0242862258759B00578165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA02428D2258759B00578165;
+			remoteInfo = PJImageDownLoadTool;
+		};
+		CA0242AC2258759C00578165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA0242862258759B00578165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA02428D2258759B00578165;
+			remoteInfo = PJImageDownLoadTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		095C570BC9A50214358FED8F /* Pods_PJImageDownLoadToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PJImageDownLoadToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		164DACBCE4C03EF209F753F3 /* Pods-PJImageDownLoadToolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJImageDownLoadToolUITests.release.xcconfig"; path = "Target Support Files/Pods-PJImageDownLoadToolUITests/Pods-PJImageDownLoadToolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A489250F771A55A32156BE4 /* Pods-PJImageDownLoadTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJImageDownLoadTool.release.xcconfig"; path = "Target Support Files/Pods-PJImageDownLoadTool/Pods-PJImageDownLoadTool.release.xcconfig"; sourceTree = "<group>"; };
+		29507455A1D70AE12392660C /* Pods_PJImageDownLoadToolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PJImageDownLoadToolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB7DD4DF01E1135A125D22F /* Pods_PJImageDownLoadTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PJImageDownLoadTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6082E3CD732D4AC62CA4ECA4 /* Pods-PJImageDownLoadToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJImageDownLoadToolTests.release.xcconfig"; path = "Target Support Files/Pods-PJImageDownLoadToolTests/Pods-PJImageDownLoadToolTests.release.xcconfig"; sourceTree = "<group>"; };
+		78782F6397AC1ADB82D0ED68 /* Pods-PJImageDownLoadTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJImageDownLoadTool.debug.xcconfig"; path = "Target Support Files/Pods-PJImageDownLoadTool/Pods-PJImageDownLoadTool.debug.xcconfig"; sourceTree = "<group>"; };
+		9A8342300BDB6B2563E06702 /* Pods-PJImageDownLoadToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJImageDownLoadToolTests.debug.xcconfig"; path = "Target Support Files/Pods-PJImageDownLoadToolTests/Pods-PJImageDownLoadToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA02428E2258759B00578165 /* PJImageDownLoadTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJImageDownLoadTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0242912258759B00578165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA0242932258759B00578165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA0242952258759C00578165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA0242982258759C00578165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA02429A2258759C00578165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA02429B2258759C00578165 /* PJImageDownLoadTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PJImageDownLoadTool.entitlements; sourceTree = "<group>"; };
+		CA0242A02258759C00578165 /* PJImageDownLoadToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PJImageDownLoadToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0242A42258759C00578165 /* PJImageDownLoadToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJImageDownLoadToolTests.swift; sourceTree = "<group>"; };
+		CA0242A62258759C00578165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA0242AB2258759C00578165 /* PJImageDownLoadToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PJImageDownLoadToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0242AF2258759C00578165 /* PJImageDownLoadToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJImageDownLoadToolUITests.swift; sourceTree = "<group>"; };
+		CA0242B12258759C00578165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA0242BE22587A6C00578165 /* PJImageTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJImageTask.swift; sourceTree = "<group>"; };
+		CA0242C022587E1500578165 /* PJImageTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJImageTaskView.swift; sourceTree = "<group>"; };
+		CA0242C22258DA0100578165 /* PJImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJImageCache.swift; sourceTree = "<group>"; };
+		FEB42A52076F1A24ABB31B78 /* Pods-PJImageDownLoadToolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJImageDownLoadToolUITests.debug.xcconfig"; path = "Target Support Files/Pods-PJImageDownLoadToolUITests/Pods-PJImageDownLoadToolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA02428B2258759B00578165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9764DB31F5DD69DA4E194B83 /* Pods_PJImageDownLoadTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA02429D2258759C00578165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD7A1E64E0C37AA3BA9BDEA /* Pods_PJImageDownLoadToolTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0242A82258759C00578165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4B08DF9393EEFC0FB9801E /* Pods_PJImageDownLoadToolUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94E1E393B7D4AEA13272A17E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7DD4DF01E1135A125D22F /* Pods_PJImageDownLoadTool.framework */,
+				095C570BC9A50214358FED8F /* Pods_PJImageDownLoadToolTests.framework */,
+				29507455A1D70AE12392660C /* Pods_PJImageDownLoadToolUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C46CD874372348378DCEAAB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78782F6397AC1ADB82D0ED68 /* Pods-PJImageDownLoadTool.debug.xcconfig */,
+				1A489250F771A55A32156BE4 /* Pods-PJImageDownLoadTool.release.xcconfig */,
+				9A8342300BDB6B2563E06702 /* Pods-PJImageDownLoadToolTests.debug.xcconfig */,
+				6082E3CD732D4AC62CA4ECA4 /* Pods-PJImageDownLoadToolTests.release.xcconfig */,
+				FEB42A52076F1A24ABB31B78 /* Pods-PJImageDownLoadToolUITests.debug.xcconfig */,
+				164DACBCE4C03EF209F753F3 /* Pods-PJImageDownLoadToolUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA0242852258759B00578165 = {
+			isa = PBXGroup;
+			children = (
+				CA0242902258759B00578165 /* PJImageDownLoadTool */,
+				CA0242A32258759C00578165 /* PJImageDownLoadToolTests */,
+				CA0242AE2258759C00578165 /* PJImageDownLoadToolUITests */,
+				CA02428F2258759B00578165 /* Products */,
+				C46CD874372348378DCEAAB6 /* Pods */,
+				94E1E393B7D4AEA13272A17E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA02428F2258759B00578165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA02428E2258759B00578165 /* PJImageDownLoadTool.app */,
+				CA0242A02258759C00578165 /* PJImageDownLoadToolTests.xctest */,
+				CA0242AB2258759C00578165 /* PJImageDownLoadToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA0242902258759B00578165 /* PJImageDownLoadTool */ = {
+			isa = PBXGroup;
+			children = (
+				CA0242BD2258775400578165 /* Classes */,
+				CA0242912258759B00578165 /* AppDelegate.swift */,
+				CA0242932258759B00578165 /* ViewController.swift */,
+				CA0242952258759C00578165 /* Assets.xcassets */,
+				CA0242972258759C00578165 /* Main.storyboard */,
+				CA02429A2258759C00578165 /* Info.plist */,
+				CA02429B2258759C00578165 /* PJImageDownLoadTool.entitlements */,
+			);
+			path = PJImageDownLoadTool;
+			sourceTree = "<group>";
+		};
+		CA0242A32258759C00578165 /* PJImageDownLoadToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA0242A42258759C00578165 /* PJImageDownLoadToolTests.swift */,
+				CA0242A62258759C00578165 /* Info.plist */,
+			);
+			path = PJImageDownLoadToolTests;
+			sourceTree = "<group>";
+		};
+		CA0242AE2258759C00578165 /* PJImageDownLoadToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA0242AF2258759C00578165 /* PJImageDownLoadToolUITests.swift */,
+				CA0242B12258759C00578165 /* Info.plist */,
+			);
+			path = PJImageDownLoadToolUITests;
+			sourceTree = "<group>";
+		};
+		CA0242BD2258775400578165 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CA0242BE22587A6C00578165 /* PJImageTask.swift */,
+				CA0242C022587E1500578165 /* PJImageTaskView.swift */,
+				CA0242C22258DA0100578165 /* PJImageCache.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA02428D2258759B00578165 /* PJImageDownLoadTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0242B42258759C00578165 /* Build configuration list for PBXNativeTarget "PJImageDownLoadTool" */;
+			buildPhases = (
+				080EA1E1FAA087F1CD308264 /* [CP] Check Pods Manifest.lock */,
+				CA02428A2258759B00578165 /* Sources */,
+				CA02428B2258759B00578165 /* Frameworks */,
+				CA02428C2258759B00578165 /* Resources */,
+				A1CF59A4368F1F2AF877A1FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PJImageDownLoadTool;
+			productName = PJImageDownLoadTool;
+			productReference = CA02428E2258759B00578165 /* PJImageDownLoadTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA02429F2258759C00578165 /* PJImageDownLoadToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0242B72258759C00578165 /* Build configuration list for PBXNativeTarget "PJImageDownLoadToolTests" */;
+			buildPhases = (
+				73C3F0276BD9EA5F1E5B0CF4 /* [CP] Check Pods Manifest.lock */,
+				CA02429C2258759C00578165 /* Sources */,
+				CA02429D2258759C00578165 /* Frameworks */,
+				CA02429E2258759C00578165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA0242A22258759C00578165 /* PBXTargetDependency */,
+			);
+			name = PJImageDownLoadToolTests;
+			productName = PJImageDownLoadToolTests;
+			productReference = CA0242A02258759C00578165 /* PJImageDownLoadToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA0242AA2258759C00578165 /* PJImageDownLoadToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0242BA2258759C00578165 /* Build configuration list for PBXNativeTarget "PJImageDownLoadToolUITests" */;
+			buildPhases = (
+				3E07FF770666B17D67D8EA76 /* [CP] Check Pods Manifest.lock */,
+				CA0242A72258759C00578165 /* Sources */,
+				CA0242A82258759C00578165 /* Frameworks */,
+				CA0242A92258759C00578165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA0242AD2258759C00578165 /* PBXTargetDependency */,
+			);
+			name = PJImageDownLoadToolUITests;
+			productName = PJImageDownLoadToolUITests;
+			productReference = CA0242AB2258759C00578165 /* PJImageDownLoadToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA0242862258759B00578165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ywyw.piaojin;
+				TargetAttributes = {
+					CA02428D2258759B00578165 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					CA02429F2258759C00578165 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = CA02428D2258759B00578165;
+					};
+					CA0242AA2258759C00578165 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = CA02428D2258759B00578165;
+					};
+				};
+			};
+			buildConfigurationList = CA0242892258759B00578165 /* Build configuration list for PBXProject "PJImageDownLoadTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA0242852258759B00578165;
+			productRefGroup = CA02428F2258759B00578165 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA02428D2258759B00578165 /* PJImageDownLoadTool */,
+				CA02429F2258759C00578165 /* PJImageDownLoadToolTests */,
+				CA0242AA2258759C00578165 /* PJImageDownLoadToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA02428C2258759B00578165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0242962258759C00578165 /* Assets.xcassets in Resources */,
+				CA0242992258759C00578165 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA02429E2258759C00578165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0242A92258759C00578165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		080EA1E1FAA087F1CD308264 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PJImageDownLoadTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E07FF770666B17D67D8EA76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PJImageDownLoadToolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C3F0276BD9EA5F1E5B0CF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PJImageDownLoadToolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1CF59A4368F1F2AF877A1FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PJImageDownLoadTool/Pods-PJImageDownLoadTool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PJImageDownLoadTool/Pods-PJImageDownLoadTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA02428A2258759B00578165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0242C122587E1500578165 /* PJImageTaskView.swift in Sources */,
+				CA0242942258759B00578165 /* ViewController.swift in Sources */,
+				CA0242922258759B00578165 /* AppDelegate.swift in Sources */,
+				CA0242C32258DA0100578165 /* PJImageCache.swift in Sources */,
+				CA0242BF22587A6C00578165 /* PJImageTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA02429C2258759C00578165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0242A52258759C00578165 /* PJImageDownLoadToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0242A72258759C00578165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0242B02258759C00578165 /* PJImageDownLoadToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA0242A22258759C00578165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA02428D2258759B00578165 /* PJImageDownLoadTool */;
+			targetProxy = CA0242A12258759C00578165 /* PBXContainerItemProxy */;
+		};
+		CA0242AD2258759C00578165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA02428D2258759B00578165 /* PJImageDownLoadTool */;
+			targetProxy = CA0242AC2258759C00578165 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA0242972258759C00578165 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA0242982258759C00578165 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA0242B22258759C00578165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA0242B32258759C00578165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CA0242B52258759C00578165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78782F6397AC1ADB82D0ED68 /* Pods-PJImageDownLoadTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PJImageDownLoadTool/PJImageDownLoadTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH68N35262;
+				INFOPLIST_FILE = PJImageDownLoadTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ywyw.piaojin.PJImageDownLoadTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CA0242B62258759C00578165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A489250F771A55A32156BE4 /* Pods-PJImageDownLoadTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PJImageDownLoadTool/PJImageDownLoadTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH68N35262;
+				INFOPLIST_FILE = PJImageDownLoadTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ywyw.piaojin.PJImageDownLoadTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CA0242B82258759C00578165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8342300BDB6B2563E06702 /* Pods-PJImageDownLoadToolTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH68N35262;
+				INFOPLIST_FILE = PJImageDownLoadToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ywyw.piaojin.PJImageDownLoadToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PJImageDownLoadTool.app/Contents/MacOS/PJImageDownLoadTool";
+			};
+			name = Debug;
+		};
+		CA0242B92258759C00578165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6082E3CD732D4AC62CA4ECA4 /* Pods-PJImageDownLoadToolTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH68N35262;
+				INFOPLIST_FILE = PJImageDownLoadToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ywyw.piaojin.PJImageDownLoadToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PJImageDownLoadTool.app/Contents/MacOS/PJImageDownLoadTool";
+			};
+			name = Release;
+		};
+		CA0242BB2258759C00578165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB42A52076F1A24ABB31B78 /* Pods-PJImageDownLoadToolUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH68N35262;
+				INFOPLIST_FILE = PJImageDownLoadToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ywyw.piaojin.PJImageDownLoadToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PJImageDownLoadTool;
+			};
+			name = Debug;
+		};
+		CA0242BC2258759C00578165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164DACBCE4C03EF209F753F3 /* Pods-PJImageDownLoadToolUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH68N35262;
+				INFOPLIST_FILE = PJImageDownLoadToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ywyw.piaojin.PJImageDownLoadToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PJImageDownLoadTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA0242892258759B00578165 /* Build configuration list for PBXProject "PJImageDownLoadTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0242B22258759C00578165 /* Debug */,
+				CA0242B32258759C00578165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA0242B42258759C00578165 /* Build configuration list for PBXNativeTarget "PJImageDownLoadTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0242B52258759C00578165 /* Debug */,
+				CA0242B62258759C00578165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA0242B72258759C00578165 /* Build configuration list for PBXNativeTarget "PJImageDownLoadToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0242B82258759C00578165 /* Debug */,
+				CA0242B92258759C00578165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA0242BA2258759C00578165 /* Build configuration list for PBXNativeTarget "PJImageDownLoadToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0242BB2258759C00578165 /* Debug */,
+				CA0242BC2258759C00578165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA0242862258759B00578165 /* Project object */;
+}

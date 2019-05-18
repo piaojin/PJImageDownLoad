@@ -1,0 +1,6 @@
+framework module Pods_PJImageDownLoadToolTests {
+  umbrella header "Pods-PJImageDownLoadToolTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
