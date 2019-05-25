@@ -185,7 +185,7 @@ class PJImageTaskView: NSTableRowView {
     }
     
     @objc private func textFieldDidChange(notification: NSNotification) {
-        if let textField = notification.object as? NSTextField {
+        if let textField = notification.object as? NSTextField, (textField == self.urlTextField || textField == self.fileNameTextField) {
             if textField.tag == TextFieldType.url.rawValue {
                 self.imageTask?.downLoadUrl = textField.stringValue
             } else {
