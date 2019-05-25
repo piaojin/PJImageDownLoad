@@ -50,26 +50,35 @@ class PJImageTaskView: NSTableRowView {
         }
     }
     
+    var isAlertShowing = false
+    
     var downLoadCompleteBlock: PJImageDownLoadCompleteBlock?
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         self.initView()
         self.initData()
-        NSEvent.addLocalMonitorForEvents(matching: NSEvent.EventTypeMask.keyDown) { (event) -> NSEvent? in
-            self.keyDown(with: event)
-            return event
-        }
     }
     
     required init?(coder decoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func keyDown(with event: NSEvent) {
-        if event.characters == "\r" {
+    override func keyUp(with event: NSEvent) {
+        super.keyUp(with: event)
+        
+        if self.isAlertShowing {
+            self.isAlertShowing = false
+            return
+        }
+        
+        if let specialKey = event.specialKey, specialKey == NSEvent.SpecialKey.carriageReturn {
             self.downLoadAction()
         }
+    }
+    
+    override var acceptsFirstResponder: Bool {
+        return true
     }
     
     private func initView() {
@@ -193,6 +202,7 @@ class PJImageTaskView: NSTableRowView {
         if let window = NSApplication.shared.keyWindow {
             alert.beginSheetModal(for: window, completionHandler: nil)
         }
+        self.isAlertShowing = true
     }
     
     override func becomeFirstResponder() -> Bool {
