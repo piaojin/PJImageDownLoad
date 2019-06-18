@@ -10,6 +10,10 @@ import Cocoa
 
 class ViewController: NSViewController {
     
+    private let newKeyAction = "n"
+    private let cleanKeyAction = "k"
+    private let saveToKeyAction = "s"
+    
     var savePathLabel: NSTextField = {
         let savePathLabel = NSTextField(labelWithString: "")
         savePathLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -117,6 +121,29 @@ class ViewController: NSViewController {
         
         self.saveToButton.target = self
         self.saveToButton.action = #selector(saveToAction)
+        
+        NSEvent.addLocalMonitorForEvents(matching: NSEvent.EventTypeMask.keyDown) { (event) -> NSEvent? in
+            return self.keyDownAction(with: event)
+        }
+    }
+    
+    private func keyDownAction(with event: NSEvent) -> NSEvent {
+        if (event.modifierFlags.rawValue & NSEvent.ModifierFlags.command.rawValue) != 0 {
+            guard let key = event.characters else {
+                return event
+            }
+            
+            switch key.lowercased() {
+            case newKeyAction:
+                self.addAction()
+            case cleanKeyAction:
+                self.cleanAction()
+            case saveToKeyAction:
+                self.saveToAction()
+            default: break
+            }
+        }
+        return event
     }
 
     override var representedObject: Any? {
@@ -188,6 +215,19 @@ extension ViewController: NSTableViewDataSource {
 //                if self.tasks.count == 0 {
 //                    self.addAction()
 //                }
+                
+                var shouldAddNewEmptyTask = true
+                
+                for task in self.tasks {
+                    if task.state != .completed {
+                        shouldAddNewEmptyTask = false
+                        break
+                    }
+                }
+                
+                if shouldAddNewEmptyTask {
+                    self.addAction()
+                }
             }
         }
         return imageTaskView
